@@ -1,0 +1,146 @@
+.principal{
+	background: #F3F5FC;
+	display: inline-block;	
+}
+header{
+	padding: 20px 0;
+}
+.logo{
+    margin: 20px 55px;
+}
+.color{
+	background: #F3F5FC;
+}
+.cajaTexto{	
+	position: relative;	
+	display: block;
+	left: 40%;
+}
+.texto{
+	background: #F3F5FC;
+	display: block;
+	font-size: 20px;
+	border: none;
+	width: 100%;
+	resize: none;
+	outline:none;
+}
+.caja-vector{
+	position: relative;
+	display: block;	
+	left: 40%;	
+}
+.vector{
+	display: inline-block;
+}
+.minusculas{
+	color:  #495057;	
+	display: inline-block;
+	font-size: 18px;
+	margin: 2px;
+}
+.botones{
+	position: relative;
+	display: block;
+	left: 40%;	
+}
+.boton1{	
+	width: 48%;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #0a3871;
+    border-radius: 15px;   
+    cursor: pointer;
+    margin: 0 4px;
+}
+.boton2{
+	width: 48%;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0a3871;
+	background: #d8dfe8;
+    border-radius: 15px;   
+    cursor: pointer;
+    margin: 0 4px;
+}
+.caja-imajen{
+	position: absolute;	
+	top: 20px;
+	right: 60px;
+	width: 25%;	
+	background: #ffffff;	
+	padding: 10px 0;
+	box-sizing: border-box;
+    border-radius: 30px;
+    text-align: center;   
+}
+.caja-dibujo{	
+	margin: 20px 0;
+	padding: 20px 0;
+}
+.imajen{	
+	width: 80%;
+	margin: 70px 0 0 0;
+}
+.mensaje1{
+	font-size: 30px;
+	padding: 0 10px;
+}
+.mensaje2{
+	font-size: 15px;
+	padding: 10px;
+	margin: 0 0 60px 0;
+}
+.caja-encriptado{	
+	margin: 20px 0 0 0;
+	padding: 20px 0 0 0;	
+	width: 100%;
+}
+.textoEncrip{
+	border: none;
+	resize: none;
+}
+.boton3{
+	width: 80%;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0a3871;
+	background: #ffffff;
+    border-radius: 15px;   
+    cursor: pointer;
+    margin: 25px 0 10px 0;
+}
+/* para usar en celular */
+@media screen and (max-width:480px){
+
+.principal{		
+
+}
+.boton1, .boton2{
+	display: inline-block;
+}
+.caja-imajen{
+	position: inherit;
+}
+.caja-dibujo, .caja-encriptado{
+
+}
+.cajaTexto{
+
+}
+.texto{
+
+}
+.caja-vector{
+
+}
+.caja-imajen{
+
+}
+.imajen{	
+
+}
