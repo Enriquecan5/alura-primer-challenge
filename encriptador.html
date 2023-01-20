@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Encriptador</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="reset.css">                <!-- Se limpia el formato automatico de style -->
         <link rel="stylesheet" href="style.css">                <!-- Se relaciona el archivo style con este HTMl -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Se cambia el estilo de la letra con uno generico de google -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        <title>Encriptador</title>        
     </head>
-    <div class="principal">
-        <header>
-            <div class="logo">
-                <h1><img src="logo.png" alt="Logo Alura"></h1>      <!-- Encabesado con el logo de alura -->
-            </div>
+    <body>       
+        <header>                
+            <img class="logo" src="logo.png" alt="Logo Alura">      <!-- logo de alura -->
         </header>
-
-        <body class="color">        
-                <div class="cajaTexto">                             <!-- Caja donde se pide el texto para encriptar -->
-                    <label for="textoParaEncrip"></label>
-                    <textarea tipo="text" cols="50" rows="16" placeholder="ingrese el texto aqui" id="textoParaEncrip" class="texto" required></textarea>
-                </div>
-                
-                <div class="caja-vector">                           <!-- Lellenda de indicacion -->
+        <main>
+            <section>
+                    <label for="textoParaEncrip"></label>       <!-- Caja donde se pide el texto para encriptar -->
+                    <textarea tipo="text" cols="30" rows="10" placeholder="ingrese el texto aqui" id="textoParaEncrip" class="texto" required></textarea>                
+                <div class="caja-vector">                           <!-- Leyenda de indicacion -->
                     <img class="vector" src="vector.png">
-                    <p class="minusculas">Solo letras minúsculas y sin acentos</p>
+                    <p class="minusculas">Solo letras minúsculas y sin acentos</p> 
                 </div>
+
                 <div class="botones">                               <!-- Botones para encriptar y desencriptar -->
                     <button tipo="button" id="encriptar" onclick="encriptar()" class="boton1">Encriptar!</button>
                     <button tipo="button" id="desencriptar" onclick="desEncriptar()" class="boton2">Desencriptar!</button>           
-                </div>                
-                    <div class="caja-imajen">
-                        <div class="caja-dibujo" id="imajenPrimaria">       <!-- Caja de primera imajen donde espera el texto encriptado -->
-                            <img class="imajen" src="muñeco.png">
-                            <p class="mensaje1">Ningún mesaje fue encontrado</p>
-                            <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>                            
-                        </div>  
-                        <div class="caja-encriptado" id="imajenSecundaria"><!--Caja de segunda imagen para encriptado y boton de copiar-->
-                            <textarea tipo="text" cols="43" rows="28" id="textoEncriptado" class="textoEncrip"></textarea>
-                            <button tipo="button" id="copiar" onclick="copiar()" class="boton3">Copiar</button>
-                        </div>    
-                    </div>  
-        </div>         
+                </div>
+            </section>        
+            <section class="caja-imajen">            
+                <div class="caja-dibujo" id="imajenPrimaria">       <!-- Caja de primera imajen donde espera el texto encriptado -->
+                    <img class="imajen" src="muñeco.png">
+                    <p class="mensaje1">Ningún mesaje fue encontrado</p>
+                    <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>                            
+                </div> 
+
+                <div class="caja-encriptado" id="imajenSecundaria"><!--Caja de segunda imagen para encriptado y boton de copiar-->
+                    <textarea tipo="text" cols="20" rows="10" id="textoEncriptado" class="textoEncrip"></textarea>
+                    <button tipo="button" id="copiar" onclick="copiar()" class="boton3">Copiar</button>
+                </div>    
+            </section>            
+        </main> 
+        
         
 
         <!-- Empieza el JavaScript-->
@@ -95,9 +98,9 @@
                                                 }else if (caracter[posicion]=="o"){
                                                         caracter[posicion] = "ober";
                                                         }else if (caracter[posicion]=="u"){
-                                                                caracter[posicion] = "ufat";            
+                                                                caracter[posicion] = "ufat";
                                                                 }
-                                arrayCadenas[posicion] = (caracter[posicion]);          
+                                arrayCadenas[posicion] = (caracter[posicion]);
                             }
                         for (var posicion = 0; posicion < arrayCadenas.length; posicion++) {
                                 cadena1 = cadena1 + arrayCadenas[posicion];
